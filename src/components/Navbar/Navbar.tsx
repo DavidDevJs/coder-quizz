@@ -1,12 +1,22 @@
-import React from "react";
+import { useState } from "react";
+import "./navbar.css";
 
 const Navbar = () => {
+  const [collapse, setCollapse] = useState(false);
+
+  const testIn: any = () => setCollapse(true);
+  const testOut: any = () => setCollapse(false);
+
   return (
-    <div>
+    <nav
+      className={collapse ? "sidebar--enabled" : "sidebar--disabled"}
+      onMouseOver={testIn}
+      onMouseOut={testOut}
+    >
       <ul>
-        <li>Dashboard</li>
+        <li>D</li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

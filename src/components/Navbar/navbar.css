@@ -1,0 +1,21 @@
+.sidebar--disabled {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.5s ease-in-out;
+}
+
+.sidebar--enabled {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.5s ease-in-out;
+}

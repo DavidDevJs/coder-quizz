@@ -1,10 +1,11 @@
-import React from "react";
+import "./header.css";
+import logo from "../../assets/image/logo.svg";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Quiz Develop</h1>
-    </div>
+    <header className="header">
+      <img src={logo} alt="coder quiz" />
+    </header>
   );
 };
 

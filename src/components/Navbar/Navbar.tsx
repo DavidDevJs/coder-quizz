@@ -40,6 +40,7 @@ const Navbar = () => {
       </ul>
       <div className="nav__icon--logout">
         <RiLogoutBoxFill className="nav__icon" />
+        <span>Logout</span>
       </div>
     </nav>
   );

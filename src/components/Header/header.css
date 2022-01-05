@@ -7,6 +7,29 @@
   margin-inline-start: 45px;
 }
 
+.addButton {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 70px;
+  text-align: center;
+}
+
+.addButton svg:hover {
+  color: rgb(20, 220, 160);
+  filter: drop-shadow(0 0 0.75rem rgba(1, 107, 58, 0.5));
+  cursor: pointer;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+.addButton svg {
+  width: 50px;
+  height: 50px;
+  color: var(--bg);
+}
+
 @media screen and (min-width: 430px) {
   .header {
     grid-column: 1/10;

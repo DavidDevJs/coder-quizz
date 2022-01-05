@@ -1,13 +1,20 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Layout } from "./components/layout";
+import { Layout } from "./components/Layout/Layout";
+import { Category } from "./components/views/categories/Category";
+import { Dashboard } from "./components/views/dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <Layout>
-        <h1>Main</h1>
-      </Layout>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/category" element={<Category />} />
+          </Routes>
+        </Layout>
+      </Router>
     </>
   );
 }

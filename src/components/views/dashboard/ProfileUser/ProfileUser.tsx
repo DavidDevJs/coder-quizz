@@ -1,10 +1,12 @@
-import { Info } from "./Info";
+import { Avatar } from "./Avatar";
 import { Stats } from "./Stats";
+
+import "./infoUser.css";
 
 const ProfileUser = () => {
   return (
-    <section>
-      <Info />
+    <section className="profile-user">
+      <Avatar />
       <Stats />
     </section>
   );

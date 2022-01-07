@@ -1,26 +1,40 @@
+import { BsFillBookmarkCheckFill } from "react-icons/bs";
+import { RiTimerFlashFill } from "react-icons/ri";
+import { AiOutlineAreaChart } from "react-icons/ai";
+
+import "./infoUser.css";
+
 const Stats = () => {
   return (
     <div className="stats">
-      <div className="stats__bar-progress"></div>
-      <div className="stats__container">
-        <ul>
-          <li className="stats__container--item">
-            <img src="./" alt="icon" />
-            <h3>27</h3>
-            <span>Quiz Passed</span>
-          </li>
-          <li className="stats__container--item">
-            <img src="./" alt="icon" />
-            <h3>27</h3>
-            <span>Time Passed</span>
-          </li>
-          <li className="stats__container--item">
-            <img src="./" alt="icon" />
-            <h3>27</h3>
-            <span>Average Retention</span>
-          </li>
-        </ul>
+      <div className="stats__name-user">
+        <h2>David Gonzalez</h2>
+        <h3>(Frontend Dev)</h3>
       </div>
+      <div className="stats__bar-progress"></div>
+      <ul className="stats__list">
+        <li className="stats__list--item">
+          <div className="item__first">
+            <BsFillBookmarkCheckFill size={24} />
+            <h3>27</h3>
+          </div>
+          <span>Successful</span>
+        </li>
+        <li className="stats__list--item">
+          <div className="item__first">
+            <RiTimerFlashFill size={24} />
+            <h3>27</h3>
+          </div>
+          <span>Time</span>
+        </li>
+        <li className="stats__list--item">
+          <div className="item__first">
+            <AiOutlineAreaChart className="item__icon" />
+            <h3>27%</h3>
+          </div>
+          <span>Retention</span>
+        </li>
+      </ul>
     </div>
   );
 };

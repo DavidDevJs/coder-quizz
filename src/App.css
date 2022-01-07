@@ -2,9 +2,7 @@
   :root {
     --bg: #17223b;
     --bg-sec: #263859;
-    --txt: #e8f0f1;
-    --contrast: #ff6768;
-    --shadow: #6b778d;
+    --txt: #6b778d;
   }
 }
 
@@ -14,7 +12,7 @@
     --bg-sec: #b0c8d3;
     --txt: #17223b;
     --contrast: #ff6768;
-    --shadow: #6b778d;
+    --shadow: #696f79;
   }
 }
 
@@ -65,7 +63,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  color: var(--contrast);
 }
 
 #root,

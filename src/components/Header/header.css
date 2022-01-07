@@ -7,6 +7,10 @@
   margin-inline-start: 45px;
 }
 
+.header img {
+  margin-block-start: 10px;
+}
+
 .addButton {
   position: absolute;
   bottom: 15px;
@@ -17,8 +21,8 @@
 }
 
 .addButton svg:hover {
-  color: rgb(20, 220, 160);
-  filter: drop-shadow(0 0 0.75rem rgba(1, 107, 58, 0.5));
+  color: rgb(44, 243, 183);
+  filter: drop-shadow(0 0 0.75rem rgba(143, 143, 143, 0.466));
   cursor: pointer;
   font-size: 0.5rem;
   font-weight: bold;

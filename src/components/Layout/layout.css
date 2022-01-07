@@ -1,3 +1,11 @@
 .main {
-  margin-inline-start: 60px;
+  margin-inline-start: 45px;
+  padding: 11px;
+}
+
+@media (min-width: 400px) {
+  .main {
+    margin-inline-start: 60px;
+    padding: 15px;
+  }
 }

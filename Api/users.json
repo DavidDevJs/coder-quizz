@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nickname": "@AdminDev",
+      "typeDev": "Frontend",
+      "imgProfile": "https://www.profile.jpg",
+      "email": "davidgonzalez0519@gmail.com",
+      "github": "@davDevMaker"
+    },
+    {
+      "id": 2,
+      "nickname": "@LorenaDesign",
+      "typeDev": "Designer",
+      "imgProfile": "https://www.profile2.jpg",
+      "email": "magrethlorena.alfonsovalderram@gmail.com",
+      "github": ""
+    }
+  ]
+}

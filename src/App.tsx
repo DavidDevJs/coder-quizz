@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./components/Layout/Layout";
-import { Category } from "./components/views/categories/Category";
+import { ListOfQuizzes } from "./components/views/ListOfQuizzes/ListOfQuizzes";
 import { Dashboard } from "./components/views/dashboard/Dashboard";
+
+const URL_API = "https://quizzes-appapi.herokuapp.com/";
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/category" element={<Category />} />
+            <Route path="/category" element={<ListOfQuizzes />} />
           </Routes>
         </Layout>
       </Router>

@@ -1,0 +1,15 @@
+.quiz-list {
+  max-width: 1150px;
+  margin: 0 auto;
+  height: auto;
+  padding-block-end: 10px;
+  padding-inline: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px 2px rgba(85, 94, 112, 0.363);
+}
+
+@media screen and (min-width: 612px) {
+  .quiz-list {
+    height: 87vh;
+  }
+}

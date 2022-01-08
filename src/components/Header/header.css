@@ -12,7 +12,7 @@
 }
 
 .addButton {
-  position: absolute;
+  position: fixed;
   bottom: 15px;
   right: 15px;
   width: 50px;

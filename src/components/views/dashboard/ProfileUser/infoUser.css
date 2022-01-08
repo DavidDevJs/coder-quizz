@@ -47,20 +47,17 @@
 .stats__list {
   display: flex;
   justify-content: center;
-  list-style: none;
   font-size: 0.8rem;
   text-align: center;
-  padding: 0;
 }
 
 .stats__list--item {
   width: 60px;
-  margin-inline: 12px;
+  margin-inline: 10px;
 }
 
 .stats__list--item span {
   font-size: 0.7rem;
-  font-weight: bold;
   color: var(--txt);
 }
 
@@ -75,10 +72,10 @@
 }
 
 .item__first h3 {
-  margin-inline-start: 10px;
+  margin-inline-start: 5px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 612px) {
   .profile-user {
     flex-direction: row;
     align-items: center;

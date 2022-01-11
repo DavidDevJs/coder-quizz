@@ -1,14 +1,22 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./components/Layout/Layout";
 import { ListOfQuizzes } from "./components/views/ListOfQuizzes/ListOfQuizzes";
 import { Dashboard } from "./components/views/dashboard/Dashboard";
+import { Home } from "./components/views/LoginAndRegister/Home";
 
-const URL_API = "https://quizzes-appapi.herokuapp.com/";
+import QuizProvider from "./context/QuizProvider";
 
 function App() {
+  const [token, setToken] = useState();
+
+  if (!token) {
+    return <Home setToken={setToken} />;
+  }
+
   return (
-    <>
+    <QuizProvider>
       <Router>
         <Layout>
           <Routes>
@@ -17,7 +25,7 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-    </>
+    </QuizProvider>
   );
 }
 

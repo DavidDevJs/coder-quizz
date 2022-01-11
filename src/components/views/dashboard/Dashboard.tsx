@@ -1,6 +1,5 @@
 import { ListOfCategories } from "./categoriesUser/ListOfCategories";
 import { ProfileUser } from "./ProfileUser/ProfileUser";
-
 import "./dashboardStyle.css";
 
 const Dashboard = () => {

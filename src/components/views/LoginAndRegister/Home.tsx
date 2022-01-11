@@ -4,6 +4,7 @@ import { Login } from "./Login";
 import { Register } from "./Register";
 
 import logo from "../../../assets/image/logo.svg";
+import "./home.css";
 
 export interface HomeProps {
   setToken: React.Dispatch<React.SetStateAction<undefined>>;
@@ -13,7 +14,7 @@ const Home = ({ setToken }: HomeProps) => {
   const [isLoged, setIsLoged] = useState(true);
 
   return (
-    <section>
+    <section className="home">
       {" "}
       <div className="home__hero">
         <img src={logo} alt="Coder Quiz" />
